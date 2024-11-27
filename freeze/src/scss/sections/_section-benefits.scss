@@ -90,6 +90,8 @@
       z-index: 5;
 
       @media (min-width: $mobile-small) {
+        width: 66%;
+        max-width: 30rem;
         font-size: 1.6rem;
         line-height: 1.7rem;
       }
@@ -111,6 +113,7 @@
   }
 
   .benefit:nth-of-type(1) {
+    // background-image: url("../img/page/texture.png");
     @media (min-width: $mobile-small) {
       overflow: hidden;
     }
@@ -124,6 +127,7 @@
         overflow: hidden;
         max-width: 39rem;
         width: 68%;
+
         left: auto;
         right: 0;
         bottom: -16%;
