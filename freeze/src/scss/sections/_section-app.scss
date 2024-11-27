@@ -80,12 +80,15 @@
         height: 50%;
         left: 0%;
         background-color: #f52aaf;
+
+
         @media (min-width: $mobile-small) {
           width: 28%;
           height: 81%;
           background-color: #f52aaf;
           left: 52%;
           filter: blur(93px);
+          animation: pulsate 3s ease infinite 0s normal forwards;
         }
       }
 
@@ -100,8 +103,8 @@
           background-color: #00bfff;
           bottom: -5%;
           right: -2%;
-          transform: rotate(29deg);
           filter: blur(93px);
+          animation: pulsate 5s ease infinite 0s normal forwards;
         }
       }
     }
@@ -146,5 +149,17 @@
     @media (min-width: $mobile-small) {
       display: none;
     }
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }
