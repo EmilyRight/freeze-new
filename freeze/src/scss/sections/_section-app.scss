@@ -1,0 +1,150 @@
+.app {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  @media (min-width: $mobile-small) {
+    margin-top: 10.5rem;
+    margin-bottom: 0rem;
+  }
+  &__container {
+  }
+
+  &__image {
+    height: 74vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    @media (min-width: $mobile-small) {
+      height: 20rem;
+      width: 47%;
+      right: 0;
+    }
+    img {
+      max-width: 90%;
+      display: block;
+      margin: 0 auto;
+      @media (min-width: $mobile-small) {
+        max-width: 45rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .app-content {
+    background-color: black;
+    border-radius: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    position: relative;
+    height: 100vw;
+    @media (min-width: $mobile-small) {
+      display: flex;
+      flex-direction: row;
+      min-height: 26rem;
+      height: auto;
+      margin-bottom: 0;
+      border-radius: 3.2rem;
+    }
+
+    &__wrapper {
+      position: relative;
+      overflow: hidden;
+      padding: 1.2rem 1.2rem 0 1.2rem;
+      border-radius: 1.6rem;
+      height: 100%;
+      width: 100%;
+      @media (min-width: $mobile-small) {
+        display: flex;
+        flex-direction: row;
+        min-height: 26rem;
+        height: auto;
+        padding: 2.4rem 2.4rem 0 2.4rem;
+        border-radius: 3.2rem;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: -15%;
+        background-color: #fff;
+        z-index: 0;
+        border-radius: 50%;
+        filter: blur(50px);
+      }
+
+      &:before {
+        width: 50%;
+        height: 50%;
+        left: 0%;
+        background-color: #f52aaf;
+        @media (min-width: $mobile-small) {
+          width: 28%;
+          height: 81%;
+          background-color: #f52aaf;
+          left: 52%;
+          filter: blur(93px);
+        }
+      }
+
+      &:after {
+        width: 74%;
+        height: 69%;
+        right: 0;
+        background-color: #00bfff;
+        @media (min-width: $mobile-small) {
+          width: 41%;
+          height: 115%;
+          background-color: #00bfff;
+          bottom: -5%;
+          right: -2%;
+          transform: rotate(29deg);
+          filter: blur(93px);
+        }
+      }
+    }
+  }
+
+  .app-content-text {
+    @media (min-width: $mobile-small) {
+      max-width: 50%;
+      padding-bottom: 2.4rem;
+    }
+
+    &__title {
+      @include section-title-main;
+      max-width: 80%;
+      margin-bottom: 0.8rem;
+      @media (min-width: $mobile-small) {
+        font-size: 2.4rem;
+        line-height: 2.2rem;
+        max-width: 100%;
+      }
+    }
+
+    &__text {
+      @include text-main;
+      @media (min-width: $mobile-small) {
+        max-width: 90%;
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    &__image {
+      display: none;
+      @media (min-width: $mobile-small) {
+        display: block;
+      }
+    }
+  }
+
+  .btn {
+    background-color: #fff;
+    color: #000;
+    @media (min-width: $mobile-small) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,304 @@
+.about {
+  padding-top: 2.4rem;
+  @media (min-width: $mobile-small) {
+    padding-top: 9rem;
+    padding-bottom: 7.5rem;
+  }
+
+  &__container {
+  }
+  .container {
+    &__cards {
+    }
+  }
+  .about-list {
+    @media (min-width: $mobile-small) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    &__item {
+      background-color: #000000;
+    }
+
+    &__btn {
+      &_desktop {
+        display: none;
+        @media (min-width: $mobile-small) {
+          display: block;
+        }
+      }
+
+      &_mobile {
+        display: block;
+        @media (min-width: $mobile-small) {
+          display: none;
+        }
+      }
+    }
+  }
+  .about-item {
+    height: 100vw;
+    position: relative;
+    margin-bottom: 1.2rem;
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    @media (min-width: $mobile-small) {
+      flex-direction: row;
+      height: 38rem;
+      border-radius: 3.2rem;
+      overflow: visible;
+    }
+
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        position: absolute;
+        width: 90%;
+        height: 70%;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: #00bfff;
+        content: "";
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(35px);
+
+        @media (min-width: $mobile-small) {
+          width: 30%;
+          height: 70%;
+          filter: blur(79px);
+          top: auto;
+          bottom: -11%;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        border-radius: 50%;
+        z-index: 0;
+        background-color: #f52aafd6;
+        content: "";
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(35px);
+
+        @media (min-width: $mobile-small) {
+          width: 30%;
+          height: 70%;
+          filter: blur(79px);
+        }
+      }
+    }
+
+    &__body {
+      background-color: #000000;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__image {
+      position: relative;
+      z-index: 2;
+      @media (min-width: $mobile-small) {
+        margin-top: auto;
+        position: absolute;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .image_main {
+      height: 15%;
+      width: 100%;
+      @media (min-width: $mobile-small) {
+        width: 50%;
+        max-width: 36vw;
+        right: 6%;
+        bottom: 0;
+      }
+
+      img {
+        width: 98%;
+        bottom: -40%;
+        @media (min-width: $mobile-small) {
+          bottom: 0;
+        }
+      }
+    }
+
+    .image_small {
+      height: 24%;
+      width: 36%;
+      z-index: 2;
+      position: absolute;
+      bottom: -2%;
+      right: 0%;
+      @media (min-width: $mobile-small) {
+        height: 24%;
+        width: 18%;
+        z-index: 2;
+        position: absolute;
+        bottom: -16%;
+        right: 4%;
+      }
+
+      img {
+        bottom: 0%;
+        width: 100%;
+      }
+    }
+  }
+
+  .about-item:nth-of-type(2) {
+    background-image: url("../img/page/about-bg-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    @media (min-width: $mobile-small) {
+      background-image: url("../img/page/about-bg-desk.png");
+      background-position-x: left;
+    }
+
+    .about-item__wrapper {
+      @media (min-width: $mobile-small) {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      &:after {
+        width: 53%;
+        height: 19%;
+        z-index: 0;
+        content: "";
+        -webkit-filter: blur(35px);
+        filter: blur(35px);
+        mix-blend-mode: plus-lighter;
+        background-color: #f52aafd6;
+        border-radius: 50%;
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: identifier 7s ease 0s infinite normal forwards;
+        @media (min-width: $mobile-small) {
+          width: 30%;
+          height: 70%;
+          filter: blur(79px);
+          top: -19%;
+          left: 13%;
+        }
+      }
+
+      &:before {
+        width: 90%;
+        height: 18%;
+        z-index: 1;
+        content: "";
+        -webkit-filter: blur(61px);
+        filter: blur(61px);
+        background-color: #00bfff;
+        border-radius: 50%;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        mix-blend-mode: plus-lighter;
+
+        @media (min-width: $mobile-small) {
+          width: 30%;
+          height: 30%;
+          animation: identifier 7s ease 0s infinite normal forwards;
+          -webkit-filter: blur(79px);
+          filter: blur(79px);
+          top: auto;
+          bottom: -17%;
+          left: 27%;
+        }
+      }
+    }
+
+    .about-item__image {
+      height: 15%;
+      width: 57%;
+      position: relative;
+      img {
+        width: 98%;
+        display: block;
+        position: absolute;
+        bottom: -4.5rem;
+        left: 2rem;
+      }
+    }
+  }
+
+  .item-body {
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    @media (min-width: $mobile-small) {
+      padding: 2.4rem;
+      height: 100%;
+      border-radius: 3.2rem;
+      max-width: 46%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      color: #fff;
+      @include section-title-main;
+      margin-bottom: 0.8rem;
+
+      @media (min-width: $mobile-small) {
+        font-size: clamp(2.4rem, 3.3vw, 3.5rem);
+        line-height: clamp(2.4rem, 3.3vw, 3.7rem);
+      }
+    }
+
+    &__text {
+      color: #fff;
+      @include text-main;
+    }
+  }
+  .btn {
+    margin-bottom: 2.4rem;
+    @media (min-width: $mobile-small) {
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+  }
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
