@@ -128,6 +128,7 @@
     .image_main {
       height: 15%;
       width: 100%;
+      mix-blend-mode: plus-lighter;
       @media (min-width: $mobile-small) {
         width: 50%;
         max-width: 36vw;
@@ -166,16 +167,24 @@
       }
     }
   }
+  .about-item:nth-of-type(1) {
+    .btn {
+      @media (min-width: $mobile-small) {
+        display: none;
+      }
+    }
+  }
 
   .about-item:nth-of-type(2) {
     background-image: url("../img/page/about-bg-mob.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
 
     @media (min-width: $mobile-small) {
       background-image: url("../img/page/about-bg-desk.png");
       background-position-x: left;
+      background-size: cover;
     }
 
     .about-item__wrapper {
@@ -213,7 +222,6 @@
         height: 18%;
         z-index: 1;
         content: "";
-        -webkit-filter: blur(61px);
         filter: blur(61px);
         background-color: #00bfff;
         border-radius: 50%;
@@ -225,13 +233,13 @@
         mix-blend-mode: plus-lighter;
 
         @media (min-width: $mobile-small) {
+          mix-blend-mode: soft-light;
           width: 30%;
           height: 30%;
           animation: identifier 7s ease 0s infinite normal forwards;
-          -webkit-filter: blur(79px);
-          filter: blur(79px);
+          filter: blur(50px);
           top: auto;
-          bottom: -17%;
+          bottom: -9%;
           left: 27%;
         }
       }
