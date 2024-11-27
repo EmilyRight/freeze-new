@@ -1,13 +1,7 @@
 import { WOW } from './vendor/wow.min';
 import detectDevice from './helpers/detectDevice';
-
-import { closeModal, openModal } from './helpers/modal';
-import {
-  fieldListener, validateFields, keyField, prepField,
-} from './helpers/inputs';
-import { generateId, getCurrentYear } from './helpers/utils';
+import { getCurrentYear } from './helpers/utils';
 import GTMEvents from './helpers/gtmEvents';
-import videoTeaser from './helpers/videoTeaser';
 import { handleFaqOpening } from './helpers/faq';
 
 const GTM = new GTMEvents();
@@ -55,4 +49,3 @@ function scrollTeaser(el) {
     scrollToElement(el);
   }
 }
-

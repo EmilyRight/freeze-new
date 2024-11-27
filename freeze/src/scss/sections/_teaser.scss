@@ -1,5 +1,6 @@
 .teaser {
   background-color: #000;
+  padding-bottom: 2.4rem;
   @media (min-width: $mobile-small) {
     padding-top: 2.4rem;
     padding-bottom: 6.4rem;
@@ -76,17 +77,12 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("../img/page/teaser-ice.png");
+      background-image: url("../img/page/teaser-ice-desk.png");
       background-repeat: no-repeat;
       background-size: cover;
       mix-blend-mode: luminosity;
       // opacity: 0;
       // animation: visible 4s ease 1s 1 normal forwards;
-      @media (min-width: $mobile-small) {
-        background-image: url("../img/page/teaser-ice-desk.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
     .container {
       height: 100%;

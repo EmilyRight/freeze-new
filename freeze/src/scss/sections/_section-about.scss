@@ -231,7 +231,6 @@
         left: 50%;
         transform: translateX(-50%);
         mix-blend-mode: plus-lighter;
-
         @media (min-width: $mobile-small) {
           mix-blend-mode: soft-light;
           width: 30%;
