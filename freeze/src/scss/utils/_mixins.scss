@@ -122,6 +122,10 @@
   background-color: #fff;
   transition: 0.3s;
   padding: 1.6rem 2.4rem;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media (min-width: $mobile-small) {
     font-size: clamp(1vw, 1.6rem, 1.1vw);
