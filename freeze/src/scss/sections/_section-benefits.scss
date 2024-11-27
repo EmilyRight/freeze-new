@@ -1,10 +1,9 @@
 .benefits {
   padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   @media (min-width: $mobile-small) {
     padding-top: 9rem;
     padding-bottom: 6rem;
-  }
-  &__container {
   }
 
   &__title {
