@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
   handleFaqOpening();
 });
 
+const paralaxEl = document.querySelector('.image_small');
+window.addEventListener('mousemove', (event) => {
+  const x = event.clientX / window.innerWidth;
+  const y = event.clientY / window.innerHeight;
+  paralaxEl.style.transform = `translate(-${x * 50}px, -${y * 50}px)`;
+  console.log(x, y);
+});
+
+// function paralaxEnd() {
+//   paralaxEl.style.transform = 'translate(-50%, -26%)';
+// }
+
 function goNextSection() {
   const goNextBtns = document.querySelectorAll('.js-go-next');
   const sectionsList = document.querySelectorAll('section');

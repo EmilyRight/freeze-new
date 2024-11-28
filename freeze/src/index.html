@@ -78,9 +78,13 @@
     <div class="page">
       <header class="header">
         <div class="container">
-          <div class="header__logo">
+          <a
+            class="header__logo js-gtm-event"
+            href="https://t2.ru"
+            target="_blank"
+            data-event="logo">
             <img src="./img/logo-white.svg" alt="" />
-          </div>
+          </a>
         </div>
       </header>
       <section class="page__section section-teaser teaser">
@@ -88,8 +92,8 @@
           <div class="teaser__content teaser-content">
             <div class="teaser-content__image"></div>
             <div
-              class="teaser-content__body teaser-body js-go-next"
-              data-event="button_more">
+              class="teaser-content__body teaser-body js-go-next js-gtm-event"
+              data-event="more">
               <div class="teaser-body__ice-bg"></div>
               <div class="container">
                 <div class="teaser-body__text teaser-text">
@@ -102,7 +106,7 @@
                   <div class="teaser__buttons">
                     <button
                       class="js-gtm-event teaser-more js-go-next"
-                      data-event="button_more"
+                      data-event="more"
                       data-section="teaser">
                       Подробнее
                     </button>
@@ -131,9 +135,10 @@
                       вы&nbsp;его не&nbsp;смените
                     </p>
                     <a
-                      href=""
+                      href="https://t2.ru/tariffs"
                       target="_blank"
-                      class="about-list__btn about-list__btn_desktop btn"
+                      class="about-list__btn about-list__btn_desktop btn js-gtm-event"
+                      data-event="conv_choose-tariff"
                       >Ко&nbsp;всем тарифам</a
                     >
                   </div>
@@ -147,9 +152,9 @@
                 </div>
               </div>
               <a
-                href=""
+                href="https://t2.ru/tariffs"
                 target="_blank"
-                class="about-list__btn about-list__btn_mobile btn"
+                class="about-list__btn about-list__btn_mobile btn js-gtm-event"
                 >Ко&nbsp;всем тарифам</a
               >
               <div class="about-list__item about-item">
@@ -161,18 +166,19 @@
                       Успейте подключиться до&nbsp;21&nbsp;января 2025
                     </h3>
                     <a
-                      href=""
+                      href="https://t2.ru/tariffs"
                       target="_blank"
-                      class="about-list__btn about-list__btn_desktop btn"
+                      data-event="conv_connect"
+                      class="about-list__btn about-list__btn_desktop btn js-gtm-event"
                       >Подключиться</a
                     >
                   </div>
                 </div>
               </div>
               <a
-                href=""
+                href="https://t2.ru/tariffs"
                 target="_blank"
-                class="about-list__btn about-list__btn_mobile btn"
+                class="about-list__btn about-list__btn_mobile btn js-gtm-event"
                 >Подключиться</a
               >
             </div>
@@ -288,7 +294,13 @@
                 </picture>
               </div>
             </div>
-            <a href="" target="_blank" class="btn">Скачать</a>
+            <a
+              href="https://q.t2.ru/app?utm_medium=app_link&utm_campaign=freeze-forever"
+              target="_blank"
+              class="btn"
+              data-event="app-download"
+              >Скачать</a
+            >
           </div>
         </section>
         <section class="page__section section-faq">
@@ -296,7 +308,7 @@
             <div class="container__inner faq">
               <h3 class="faq__title">Остались вопросы? мы&nbsp;ответим!</h3>
               <div class="faq__content" data-region="msk">
-                <div class="faq__item item js-gtm-event" data-event="faq-2">
+                <div class="faq__item item js-gtm-event" data-event="faq_all">
                   <div class="item__header">
                     <div class="item__title subtitle">
                       Что нужно сделать, чтобы у&nbsp;меня была вечная
@@ -317,7 +329,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq__item item js-gtm-event" data-event="faq-3">
+                <div class="faq__item item js-gtm-event" data-event="faq_all">
                   <div class="item__header">
                     <div class="item__title subtitle">
                       Заморозится только плата за&nbsp;тариф?
@@ -341,7 +353,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq__item item js-gtm-event" data-event="faq-4">
+                <div class="faq__item item js-gtm-event" data-event="faq_all">
                   <div class="item__header">
                     <div class="item__title subtitle">
                       Сколько будет действовать вечная заморозка?
