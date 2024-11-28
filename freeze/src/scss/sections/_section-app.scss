@@ -48,7 +48,6 @@
       border-radius: 3.2rem;
     }
 
-
     &__wrapper {
       position: relative;
       overflow: hidden;
@@ -82,7 +81,6 @@
         left: 0%;
         background-color: #f52aaf;
 
-
         @media (min-width: $mobile-small) {
           width: 28%;
           height: 81%;
@@ -111,16 +109,8 @@
     }
 
     &__bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
       background-image: url("../img/page/texture-app_mob.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 1;
-      mix-blend-mode: overlay;
+      opacity: 0.65;
       @media (min-width: $mobile-small) {
         background-image: url("../img/page/texture-app.png");
       }
