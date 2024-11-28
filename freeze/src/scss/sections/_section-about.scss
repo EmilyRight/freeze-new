@@ -75,12 +75,12 @@
         filter: blur(35px);
 
         @media (min-width: $mobile-small) {
-          width: 30%;
-          height: 70%;
+          width: 49%;
+          height: 66%;
           will-change: filter;
           filter: blur(79px);
           top: auto;
-          bottom: -11%;
+          bottom: -10%;
         }
       }
 
@@ -99,10 +99,11 @@
         filter: blur(35px);
 
         @media (min-width: $mobile-small) {
-          width: 30%;
-          height: 70%;
+          width: 48%;
+          height: 131%;
           will-change: filter;
           filter: blur(79px);
+          top: 15%;
         }
       }
     }
@@ -135,9 +136,9 @@
       mix-blend-mode: plus-lighter;
       @media (min-width: $mobile-small) {
         width: 50%;
-        max-width: 36vw;
-        right: 6%;
+        max-width: 38vw;
         bottom: 0;
+        right: 4%;
       }
 
       img {
@@ -161,12 +162,13 @@
         width: 18%;
         z-index: 2;
         position: absolute;
-        bottom: -16%;
+        bottom: 0%;
         right: 4%;
       }
 
       img {
-        bottom: 0%;
+        transition: 2s;
+        transform: translate(-50%, -27%);
         width: 100%;
       }
     }
