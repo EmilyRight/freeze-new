@@ -164,11 +164,14 @@
         position: absolute;
         bottom: 0%;
         right: 4%;
+        transition: .4s;
       }
 
       img {
-        transition: 2s;
+        cursor: pointer;
+
         transform: translate(-50%, -27%);
+        transform-origin: center;
         width: 100%;
       }
     }
