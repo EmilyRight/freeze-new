@@ -88,8 +88,12 @@
       top: 0;
       left: 0;
       background-image: url("../img/page/texture-benefit.png");
-      mix-blend-mode: overlay
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+      mix-blend-mode: overlay;
     }
+    
     &__title {
       @include section-title-small;
       max-width: 80%;
