@@ -71,11 +71,13 @@
         top: -5%;
         left: 50%;
         transform: translateX(-50%);
+        will-change: filter;
         filter: blur(35px);
 
         @media (min-width: $mobile-small) {
           width: 30%;
           height: 70%;
+          will-change: filter;
           filter: blur(79px);
           top: auto;
           bottom: -11%;
@@ -93,11 +95,13 @@
         top: 0%;
         left: 50%;
         transform: translateX(-50%);
+        will-change: filter;
         filter: blur(35px);
 
         @media (min-width: $mobile-small) {
           width: 30%;
           height: 70%;
+          will-change: filter;
           filter: blur(79px);
         }
       }
@@ -202,6 +206,7 @@
         height: 19%;
         z-index: 0;
         content: "";
+        will-change: filter;
         -webkit-filter: blur(35px);
         filter: blur(35px);
         mix-blend-mode: plus-lighter;
@@ -215,6 +220,7 @@
         @media (min-width: $mobile-small) {
           width: 30%;
           height: 70%;
+          will-change: filter;
           filter: blur(79px);
           top: -19%;
           left: 13%;
@@ -226,6 +232,7 @@
         height: 18%;
         z-index: 1;
         content: "";
+        will-change: filter;
         filter: blur(61px);
         background-color: #00bfff;
         border-radius: 50%;
@@ -240,6 +247,7 @@
           width: 30%;
           height: 30%;
           animation: identifier 7s ease 0s infinite normal forwards;
+          will-change: filter;
           filter: blur(50px);
           top: auto;
           bottom: -9%;

@@ -72,6 +72,7 @@
         background-color: #fff;
         z-index: 0;
         border-radius: 50%;
+        will-change: filter;
         filter: blur(50px);
       }
 
@@ -86,6 +87,7 @@
           height: 81%;
           background-color: #f52aaf;
           left: 52%;
+          will-change: filter;
           filter: blur(93px);
           animation: pulsate 3s ease infinite 0s normal forwards;
         }
@@ -102,6 +104,7 @@
           background-color: #00bfff;
           bottom: -5%;
           right: -2%;
+          will-change: filter;
           filter: blur(93px);
           animation: pulsate 5s ease infinite 0s normal forwards;
         }
